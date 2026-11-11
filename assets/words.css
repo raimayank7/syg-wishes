@@ -9,6 +9,7 @@
 .sec-h{margin-top:1.3em;font-size:1.15rem}.sec-h a{color:inherit}
 .finder .chips{margin:10px 0 0}.chips a,.chips button{min-height:40px;display:inline-flex;align-items:center}
 .finder .pick-l{margin-top:10px}
+.card .ph{margin:0;font-size:1.08rem}
 .card.pick{border:2px solid var(--teal)}
 .poem{white-space:pre-line;font-size:1.05rem;line-height:1.8;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:14px 0}
 @media print{.chips,.count,.btn{display:none!important}.card{break-inside:avoid;border:0;border-bottom:1px solid #ccc;border-radius:0}}
