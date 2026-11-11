@@ -1,0 +1,14 @@
+/* cards of words to send: extras on top of the shared stylesheet */
+.card cite{font-style:normal;color:var(--soft);font-size:.9rem}
+.card .mean{font-size:.95rem;color:var(--soft)}
+.card p:lang(hi),.card p:lang(pa),.card p:lang(sa){line-height:1.85;font-size:1.06rem}
+.card .btn.sm,.acts .btn.sm{min-height:40px}
+.card .from{font-size:.84rem;color:var(--soft)}
+.btn[data-s][aria-pressed=true]{background:var(--surface2);border-color:var(--line);color:var(--ink)}
+.count{color:var(--soft);font-size:.9rem;margin:8px 0 0;min-height:1.4em}
+.sec-h{margin-top:1.3em;font-size:1.15rem}.sec-h a{color:inherit}
+.finder .chips{margin:10px 0 0}.chips a,.chips button{min-height:40px;display:inline-flex;align-items:center}
+.finder .pick-l{margin-top:10px}
+.card.pick{border:2px solid var(--teal)}
+.poem{white-space:pre-line;font-size:1.05rem;line-height:1.8;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:14px 0}
+@media print{.chips,.count,.btn{display:none!important}.card{break-inside:avoid;border:0;border-bottom:1px solid #ccc;border-radius:0}}
