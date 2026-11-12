@@ -1,0 +1,16 @@
+/* Gift Ideas */
+textarea{width:100%;min-height:150px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px;resize:vertical}
+.card h3{margin:0;font-size:1.05rem}
+.card p{font-size:.96rem;color:var(--soft);white-space:normal}
+.card .tags{margin:0}
+.card .btn[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}
+.lvl{font-weight:700}
+.lines{list-style:none;padding:0;margin:8px 0 18px}
+.lines li{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.lines li span{flex:1;min-width:0}
+#shortlist ol{padding-left:22px}#shortlist li{margin:6px 0}
+.grid a span{display:block}.grid a span small{display:block;white-space:normal;margin-top:2px}
+#ss-stage{text-align:center}
+#ss-stage .big{font-family:var(--font-head);letter-spacing:0}
+table th{position:static}
+@media print{.chips,.card .acts{display:none!important}}

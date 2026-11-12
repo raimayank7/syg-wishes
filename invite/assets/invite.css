@@ -1,0 +1,19 @@
+/* Invitations: the few styles the shared frame does not have */
+textarea{width:100%;min-height:96px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px;resize:vertical}
+input[type=file]{width:100%;min-height:46px;font:inherit;font-size:1rem;color:var(--ink)}
+.card .lbl{font:700 .8rem var(--font-head);color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.card p[lang=hi],.card p[lang=pa]{line-height:1.75}
+.maker{display:grid;gap:18px;grid-template-columns:1fr;align-items:start;margin:14px 0 26px}
+.maker .finder{margin:0}
+.maker .stage{text-align:center}
+.maker canvas{width:100%;max-width:460px;height:auto;border-radius:12px;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
+.maker .one{margin-top:12px}
+.maker .acts{justify-content:center}
+@media (min-width:860px){.maker{grid-template-columns:minmax(0,1fr) minmax(320px,460px)}.maker .stage{position:sticky;top:84px;order:2}}
+.home-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.grid a span{display:block}.grid a span small{display:block;white-space:normal;margin-top:2px}
+.lines{list-style:none;padding:0;margin:8px 0 18px}
+.lines li{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.lines li span{flex:1;min-width:0}
+ul.tick{list-style:none;padding:0}ul.tick li{padding-left:28px;position:relative}ul.tick li::before{content:"\2713";position:absolute;left:4px;color:var(--ok);font-weight:700}
+@media print{.maker .finder,.chips{display:none!important}}

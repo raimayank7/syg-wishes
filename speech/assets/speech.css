@@ -1,0 +1,17 @@
+/* speeches: reading blocks, script lines, timer */
+[lang=hi]{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font);line-height:1.85}
+.sp{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 14px;margin:18px 0;scroll-margin-top:120px}
+.sp h2{margin-top:0}.sp .hint{margin:-.2em 0 .8em}
+.sp-text{font-size:1.07rem;line-height:1.8}.sp-text p{margin:0 0 .9em;white-space:pre-line}
+.sp .btn.sm,.chips a,.chips button,.prose .btn.sm{min-height:40px}
+.sc-part{border-left:3px solid var(--accent);padding:2px 0 2px 14px;margin:14px 0}
+.sc-part h3{margin:.2em 0 .3em}.sc-part p{margin:0;white-space:pre-line;font-size:1.05rem;line-height:1.75}
+.lines{list-style:none;padding:0;margin:10px 0;display:grid;gap:8px}
+.lines li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.lines li span{flex:1}.lines button{flex:none}
+textarea{width:100%;min-height:220px;padding:12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px;resize:vertical}
+.tm{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin:12px 0}
+.tm div{background:var(--surface2);border-radius:10px;padding:10px 12px}.tm b{display:block;font:500 1.5rem var(--mono)}.tm small{color:var(--soft)}
+.clock{font:500 2.4rem var(--mono);margin:.2em 0}
+@media print{.sp{border:0;padding:0}.chips,.note,.grid,.btn,.lines button{display:none!important}.sp-text,.sc-part p{font-size:13pt}}
+.finder .btn.sm{min-height:40px}

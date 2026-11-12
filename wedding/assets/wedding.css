@@ -1,0 +1,23 @@
+/* Wedding: tick lists, sheets */
+input[type=date],input[type=number]{width:100%;min-height:46px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px}
+.todo{list-style:none;padding:0;margin:8px 0 18px}
+.todo li{margin:0;border-bottom:1px solid var(--line)}
+.todo label{display:flex;gap:12px;align-items:flex-start;padding:11px 2px;cursor:pointer;min-height:44px}
+.todo input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--accent)}
+.todo input:checked + span{color:var(--soft);text-decoration:line-through}
+h2 .due{display:block;font:600 .86rem var(--font);color:var(--accent);letter-spacing:0;margin-top:2px}
+h2.now{border-left:4px solid var(--accent);padding-left:10px}
+.out{font:600 1.05rem/1.45 var(--font);margin:14px 0 0;padding:12px 14px;background:var(--surface2);border-radius:10px;border-left:4px solid var(--teal)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.bar b{margin-right:auto}
+.sheet td input[type=text]{min-height:42px;padding:8px 10px}
+.sheet td{vertical-align:middle}
+.bad{color:var(--bad)}
+.ck{display:inline-flex;gap:8px;align-items:center;min-height:40px}.ck input{width:20px;height:20px;accent-color:var(--accent)}
+.lines{list-style:none;padding:0;margin:8px 0 18px}
+.lines li{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.lines li span{flex:1;min-width:0}
+.grid a span{display:block}.grid a span small{display:block;white-space:normal;margin-top:2px}
+table th{position:static}
+@media (max-width:640px){table.stack td:empty{display:none}}
+@media print{.bar .btn,.finder .hint,.chips{display:none!important}.todo input{accent-color:#000}.finder{display:block!important;box-shadow:none;border:0;padding:0}.sheet td:last-child{display:none}}

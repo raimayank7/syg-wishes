@@ -1,7 +1,7 @@
 /* words to send: copy, WhatsApp, save in this browser, filter a page, search the whole site */
 (function () {
   'use strict';
-  var d = document, S = window.SYG, KEY = 'syg-saved';
+  var d = document, S = window.SYG, KEY = 'syg-saved-wishes'; try { var o = localStorage.getItem('syg-saved'); if (o && !localStorage.getItem(KEY)) { localStorage.setItem(KEY, JSON.stringify(JSON.parse(o).map(function (x) { if (x && x.u && x.u.indexOf('/wishes/') !== 0) x.u = '/wishes' + x.u; return x; }))); } } catch (e) {}
   function saved() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) { return []; } }
   function put(l) { try { localStorage.setItem(KEY, JSON.stringify(l.slice(0, 300))); } catch (e) {} }
   function textOf(card) { return [].map.call(card.querySelectorAll('[data-t]'), function (x) { return x.textContent; }).join('\n'); }
@@ -79,8 +79,8 @@
   var gq = d.getElementById('gq');
   if (gq) {
     var all = null, wait = null, gr = d.getElementById('gr'), gc = d.getElementById('gcount');
-    var get = function () { return wait || (wait = S.json('/data/all.json').then(function (j) { all = j; all.items.forEach(function (x) { x[4] = (x[0] + ' ' + x[2] + ' ' + x[3] + ' ' + x[4] + ' ' + j.cats[x[1]][1]).toLowerCase(); }); return j; })); };
-    var from = function (x) { return ['/' + all.cats[x[1]][0] + '/', all.cats[x[1]][1]]; };
+    var get = function () { return wait || (wait = S.json('/wishes/data/all.json').then(function (j) { all = j; all.items.forEach(function (x) { x[4] = (x[0] + ' ' + x[2] + ' ' + x[3] + ' ' + x[4] + ' ' + j.cats[x[1]][1]).toLowerCase(); }); return j; })); };
+    var from = function (x) { return ['/wishes/' + all.cats[x[1]][0] + '/', all.cats[x[1]][1]]; };
     var tm;
     var find = function () {
       var w = gq.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
